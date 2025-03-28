@@ -123,9 +123,13 @@
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Abstract</h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
+      <!-- <div class="item">
         <img src="static/images/2d_vs_3d.png" alt="MY ALT TEXT"/>
+      </div> -->
+      <div class="columns is-centered has-text-centered">
+        <video poster="" autoplay muted loop preload="none" class="w-auto"  style="height:50vh;" ;">
+          <source src="static/videos/3DOVS.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="content has-text-justified">
         <p>
@@ -144,6 +148,25 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Segment-then-Splat V.S. Splat-then-Segment</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <img src="static/images/2d_vs_3d.png" alt="MY ALT TEXT" style="max-width: 80%; height: auto;"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          <b>Comparison of our Segment-then-Splat pipeline and the traditional Splat-then-Segment approach.</b> (a) The traditional Splat-then-Segment pipeline learns a language field alongside the reconstruction of the scene. During object queries, it renders Gaussian language embeddings into 2D feature maps to identify relevant pixels based on the input text embedding. (b) In contrast, our Segment-then-Splat pipeline first initialize Gaussians into object-specific sets before reconstruction, ensuring a precise object-Gaussian correspondence and better segmentation accuracy.
+        </p>
+    </div>
+  </div>
+</section>
+<!-- End pipeline overview -->
+
+<!-- pipeline overview -->
+<section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Pipeline Overview</h2>
       </div>
       <div class="item">
@@ -158,233 +181,34 @@
 </section>
 <!-- End pipeline overview -->
 
-<section class="hero is-small">
+
+<section class="section hero is-light">
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h2 class="title">Scene Object Removal Results</h2>
-            <div id="results-carousel" class="carousel results-carousel">
-                <div class="item rounded-0 border-0 item-1">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_1_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/1_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-2">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_2_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/2_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-3">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_3_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/3_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-4">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_4_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/4_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-7">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_7_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/7_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-9">
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/ori_9_spiral_050000_rgb.mp4" type="video/mp4">
-                  </video>
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/9_removed_gs.mp4" type="video/mp4">
-                  </video>
-              </div>
-                <div class="item rounded-0 border-0 item-10">
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/ori_10_spiral_050000_rgb.mp4" type="video/mp4">
-                  </video>
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/10_removed_gs.mp4" type="video/mp4">
-                  </video>
-              </div>
-                <div class="item rounded-0 border-0 item-12">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/12_ori.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/12_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-book">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_book_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/book_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-trash">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_trash_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/trash_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+            <h2 class="title">3D Segmentation V.S. Pixel-based Segmentation</h2>
+            
         </div>
     </div>
 </section>
-<br/>
 
-<section class="hero teaser">
-    <div class="container is-max-desktop has-text-centered shadow-sm">
-        <br/>
-        <h2 class="title">Comparison with Previous Methods</h2>
-        <div class="row">
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/ori_3_spiral_050000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/3_lpips_True_prepare_False_010000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/3_nerfiller.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/3_removed_gs.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/ori_book_spiral_050000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">Original Scene</h5>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/book_lpips_True_prepare_False_010000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">SPIn-NeRF</h5>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/book_nerfiller.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">NeRFiller</h5>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/book_removed_gs.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">Ours</h5>
-            </div>
-        </div>
-    </div>
-</section>
-<br/>
-
-<section class="hero is-light">
+<section class="section hero ">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-centered ">
-        <h2 class="title has-text-centered">Multi-view Consistency</h2>
-          <div class="row d-flex justify-content-around">
-            <div class="content has-text-justified">
-              <p class="content">Here we showcase how our pipeline ensures the multi-view consistency by evaluating the number of keypoint matchings across different rendered views. These keypoint matchings are given by SuperGlue, and we only consider the matchings within the inpainted region. As evident in the results, our pipeline has significantly more results within the inpainted region, which indicates a better multi-view consistency.</p>
-            </div>
-            <div class="row justify-content-around">
-              <div class="col-8">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/book_spinnerf_matching.mp4"
-                        type="video/mp4">
-                </video>
-                <h2 class="subtitle has-text-centered">SPIn-NeRF</h2>
-              </div>
-            </div>
-            <div class="row justify-content-around">
-              <div class="col-8">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/book_nerfiller_matching.mp4"
-                        type="video/mp4">
-                </video>
-                <h2 class="subtitle has-text-centered">NeRFiller</h2>
-              </div>
-            </div>
-            <div class="row justify-content-around">
-              <div class="col-8">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/book_gs_matching.mp4"
-                        type="video/mp4">
-                </video>
-                <h2 class="subtitle has-text-centered">Ours</h2>
-              </div>
-            </div>
-          </div>
+      <div class="container has-text-centered">
+          <h2 class="title">Comparison of 3D Segmentation on Static Scene</h2>
+          
       </div>
-    </div>
   </div>
 </section>
 
-<section class="hero teaser">
+
+<section class="section hero is-light">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-full">
-        <h2 class="title has-text-centered">Mask Consistency</h2>
-          <div class="row d-flex justify-content-around">
-            <div class="content has-text-justified">
-              <p class="content has-text-justified">Our multi-view segmentation approach can not only maintain mask consistency across different views, but can also take regions without semantic meanings into consideration (i.e. the shadow on the left side of the book).
-              </p>
-            </div>
-            <div class="col-5 p-1">
-              <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/ori_book_spiral_050000_rgb.mp4"
-                        type="video/mp4">
-              </video>
-              <h2 class="subtitle has-text-centered">Original Scene</h2>
-            </div>
-            <div class="col-5 p-1">
-              <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/book_mask.mp4"
-                        type="video/mp4">
-              </video>
-              <h2 class="subtitle has-text-centered">Masks</h2>
-            </div>
-          </div>
+      <div class="container has-text-centered">
+          <h2 class="title">Comparison of 3D Segmentation on Dynamic Scene</h2>
+          
       </div>
-    </div>
   </div>
 </section>
-
 
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
